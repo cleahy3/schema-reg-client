@@ -1,0 +1,11 @@
+<h1>Welcome to the Actors Page!</h1>
+<section class = "all-actors">
+<% for(var i = 0; i<actors.length; i++){ %>
+	<a href="actors/<%= actors[i].id %>">
+		<h2>
+			<%= actors[i].title %>
+		</h2>
+	</a>
+	<p> <%= actors[i].description %> </p>
+	<a href="/actors/<%= actors[i].id %>/edit">Edit</a>
+<%}%></section>

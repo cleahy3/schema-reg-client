@@ -1,0 +1,29 @@
+{
+  "name": "schema-reg-client",
+  "version": "1.0.0",
+  "description": "Client for a schema registry",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cleahy3/schema-reg-client.git"
+  },
+  "author": "cleahy3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleahy3/schema-reg-client/issues"
+  },
+  "homepage": "https://github.com/cleahy3/schema-reg-client#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "express-ejs-layouts": "^2.2.0",
+    "express-session": "^1.14.2",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.6"
+  }
+}

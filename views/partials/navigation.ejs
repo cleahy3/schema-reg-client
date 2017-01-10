@@ -1,0 +1,18 @@
+<nav class="navigation">
+
+  <% if(user.id) { %>
+    <a href="/schemas">Schemas</a>
+    <a href="/schemas/new">New Schema</a>
+    <a href="/subjects">Subject</a>
+    <a href="/subjects/new">New Subject</a>
+    <form action="/sessions" class="logout-form" method="POST">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Logout">
+    </form>
+    <p>Welcome, <%= user.first_name %></p>
+  <% } else { %>
+    <a href="/sessions/new">Login</a>
+    <a href="/users/new">Register</a>
+  <% } %>
+
+</nav>
